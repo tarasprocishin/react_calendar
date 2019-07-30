@@ -1,1 +1,1 @@
-###[DEMO LINKS](https://tarasprocishin.github.io/react_calendar/)
+[DEMO LINKS](https://tarasprocishin.github.io/react_calendar/)
