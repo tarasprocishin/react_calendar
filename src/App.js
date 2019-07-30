@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.css';
-import Month from './Components/Monts';
+import './css/App.css';
+import Months from './Components/Months';
 
 
 class App extends React.Component {
@@ -55,13 +55,15 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Calendar</h1>
-        <button onClick={this.prevMonth}>Prev</button>
-        <Month 
+        <div className='buttons'>
+          <button onClick={this.prevMonth}>Prev</button>
+          <button onClick={this.currentlyMonth}>Currently</button>
+          <button onClick={this.nextMonth}>Next</button>
+        </div>
+        <Months 
         year={year}
         month={month}
         />
-        <button onClick={this.currentlyMonth}>Currently</button>
-        <button onClick={this.nextMonth}>Next</button>
       </div>
     );
   }
